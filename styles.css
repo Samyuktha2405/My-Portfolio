@@ -1,0 +1,369 @@
+:root{
+    --text-color:#1a1c20;
+    --link-color:#4a76ee;
+    --background-color:#daf0f7;
+
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: sans-serif;
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/*NAVBAR*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(175, 176, 239);
+
+    padding: 0 50PX;
+    height: 80px;
+
+}
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 100px;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0px 30px;
+}
+nav .right a:hover{
+    text-decoration: underline;
+    
+}
+
+nav .right a span{
+    margin-left: 1px;
+
+}
+/*section-1*/
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+.hero-section .text{
+    flex: 5;
+    
+}
+
+.hero-section .text h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.hero-section .text .links {
+   
+    display: flex;
+    gap: 15px;
+    margin-top: 25px ;
+    
+}
+.hero-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    margin: 10px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    transition: 0.3s ease;
+}
+.hero-section .text .links a:hover{
+ color: 2px var(--text-color);
+ border: 1px solid var(--text-color);
+  transform: translateY(-5px);
+}
+.hero-section.headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+
+.hero-section .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+.hero-section .headshot img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+
+}
+/*SECTION 2:Skills*/
+.skills-section{
+    padding: 0 50px;
+    margin-bottom: 200px;
+    margin-top: 20px;
+    
+   
+   }
+
+.skills-section h2{
+   text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.skills-section .Text{
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.skills-section .Cells{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+  gap: 20px;
+}
+.skills-section .Cells .cell{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+
+    width: 200px;
+    padding: 10px 20px;
+    border: 1px solid #100707;
+    background: transparent;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.skills-section .Cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.skills-section .Cells .cell span {
+    font-size: 25px;
+}
+
+/* hover effect*/
+.cell:hover{
+  transform: translateY(-5px);
+   
+}
+
+/* images */
+.skills-section .Cells .cell img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* text */
+.skills-section span{
+  font-weight: 600;
+  font-size: 15px;
+}
+
+
+/*SECTION 3*/
+
+.project-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+.project-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-section .Text {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 150px;
+   
+}
+
+
+/*SECTION 4*/
+
+.Technologies-section{
+  padding: 60px 30px;
+  margin-top: 30px;
+}
+
+.Technologies-section h2{
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+/* main flex container */
+.tech-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;   /* responsive */
+}
+
+/* each card */
+.tech-card{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 10px;
+  border: 1px solid #0a0a0a;
+  border-radius: 12px;
+  background: transparent;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* hover effect */
+.tech-card:hover{
+  transform: translateY(-5px);
+
+}
+
+/* images */
+.tech-card img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* text */
+.tech-card span{
+  font-weight: 600;
+  font-size: 15px;
+}
+
+
+/*SECTION 5:CONTACT*/
+.contact-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+.contact-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text{
+ flex: 3;
+ margin-top: 20px;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    
+    
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea{
+    border: 1px solid var(--link-color);
+    background-color: transparent;
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    resize: none;
+
+
+}
+.contact-section .group form button{
+    margin: 20px;
+    font-size: 16px;
+    background-color: var(--link-color);
+   height: 50px;
+   cursor: pointer;
+   border: none;
+   transition: .1s;
+
+}
+.contact-section .group button:hover{
+    filter: brightness(.9);
+   
+}
+
+
+
+
+@media (max-width:850px){
+    /*SECTION 1:HERO*/
+    .hero-section.text.h2{
+        font-size: 35px;
+
+    }
+}
+@media (max-width:740px){
+    /*SECTION 1:HERO*/
+    .hero-section{
+        flex-direction: column-reverse;
+        }
+        .hero-section.headshot.img{
+            width: 300px;
+        }
+}
+
+@media (max-width:600px){
+    /*NAVBAR*/
+    nav{
+        padding:0 20px;
+    }
+
+   nav .right a{
+ font: 22px;
+   }
+    nav .right a:last-child{
+        color:var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+    nav.right a span{
+        display:none;
+    }
+ /*SECTION 1:Hero*/
+ .hero-section{
+    padding: 0 20px;
+ }
+ .hero-section.text.h2{
+    font-size: 32px;
+
+ }
+}
+/*SECTION-2*/
+.skills-section{
+    padding: 0 20px;
+
+}
